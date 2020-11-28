@@ -1,0 +1,40 @@
+#blocpage {
+  font-family: agency fb;
+  font-size: 1.4em;
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+aside {
+  flex: 30%;
+  background-color: rgb(255, 201, 51);
+}
+
+section {
+  background-color: rgb(143, 29, 29);
+  flex: 70%;
+}
+.photo {
+  text-align: center;
+}
+h3 {
+  background-color: rgb(75, 72, 72);
+  color: rgb(255, 201, 51);
+  height: 60px;
+  text-align: center;
+  padding-top: 10%;
+}
+#list {
+  text-align: left;
+  padding-left: 15px;
+}
+#textaside {
+  margin: 15px;
+}
+#logo {
+  display: flex;
+  justify-content: space-around;
+}
+#textaside {
+  text-align: justify;
+}
