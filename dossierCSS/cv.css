@@ -4,26 +4,18 @@
   display: flex;
   width: 60%;
   margin: auto;
+  /*Ces deux marges ont étés ajouté afin d'éviter un petit espace vide en haut et en bas de la page*/
+  margin-top: -8px;
+  margin-bottom: -8px;
 }
-aside {
-  position: relative;
-  flex: 30%;
-  background-color: rgb(255, 201, 51);
-}
+/* ID */
 
-section {
-  padding-left: 6%;
-  flex: 70%;
-}
-.photo {
-  text-align: center;
-}
-aside h3 {
+#contact {
   background-color: rgb(75, 72, 72);
-  color: rgb(255, 201, 51);
-  height: 70px;
-  text-align: center;
-  padding-top: 13%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #list {
   text-align: left;
@@ -39,13 +31,16 @@ aside h3 {
 #textaside {
   text-align: justify;
 }
-.ligne {
-  border-bottom: 2px rgb(255, 190, 51) solid;
-}
 #mesformations {
   display: flex;
   margin-bottom: 30px;
 }
+
+/* CLASS */
+.ligne {
+  border-bottom: 2px rgb(255, 190, 51) solid;
+}
+
 .date {
   flex: 25%;
 }
@@ -64,14 +59,35 @@ aside h3 {
 .orange {
   color: rgb(255, 190, 51);
 }
+.decalage {
+  height: 100%;
+}
+.photo {
+  text-align: center;
+}
+.flexend {
+  bottom: 0%;
+  width: 100%;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  flex: 30%;
+  background-color: rgb(255, 201, 51);
+}
+section {
+  padding-left: 6%;
+  flex: 70%;
+}
+
+aside h3 {
+  color: rgb(255, 201, 51);
+}
+
 h1 {
   font-size: 3em;
 }
-.flexend {
-  bottom: 0px;
-  position: absolute;
-  width: 100%;
-}
+
 a:visited {
   color: white;
 }
@@ -83,4 +99,18 @@ aside img {
   border-radius: 200px;
   padding: 2px;
   border: 5px black solid;
+}
+
+@media screen and (max-width: 1024px) {
+  #blocpage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  aside {
+    flex: 50%;
+  }
+  section {
+    flex: 50%;
+  }
 }
